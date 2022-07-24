@@ -7,13 +7,12 @@ backgroundImage : "/assets/img/Bouquet.jpg"
 
 ---
 
-<section class="">
-    <div class="pagina">
+<section >
+
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
 
@@ -39,5 +38,59 @@ backgroundImage : "/assets/img/Bouquet.jpg"
               <span class="visually-hidden">Next</span>
             </button>
           </div>
+ 
+</section>
+
+<section class="padding-section services">
+    <div class="container ">
+
+        <h2 class="text-uppercase text-center pb-3">servicios</h2>
+        <div class="d-flex row justify-content-center gap-5 ">
+
+            {% for service in site.data.services %}
+            <div class=" col-12 col-md-3 text-center d-flex justify-content-center ">
+                <div class="col-8 col-md-12 d-flex flex-column ">
+                    <div class="pb-4 content-image">
+                        <img class="img-services "  src="{{service.img}}" alt="{{service.img}}" width="100%" height="250px">
+                    </div>
+                    <div>
+                        <p> 
+                            {{service.caption}}
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            {%endfor%}
+
+            
+            
+            
+        </div>
     </div>
+</section>
+
+<section class="padding-section">
+    <div class="container">
+        <h2 class="text-uppercase text-center pb-3 fs-bold">HORARIO DE ATENCIÓN</h2>
+     
+        <div class=" d-flex  flex-column flex-md-row gap-5 justify-content-center">
+
+            {% for item in site.data.horarios %}
+            <div class="d-flex  flex-column text-center  gap-2">
+                <div class="d-flex justify-content-center">
+                    <div class="days py-3 px-3  rounded-5 text-center "> 
+                        <h3 >{{item.days}}</h3>
+                    </div>
+                </div>
+
+                    <p class=" fs-4 m-0">{{item.from}}</p>
+            
+                    <p  class=" fs-4">{{item.to}}</p>
+
+            </div>
+            {%endfor%}
+
+    </div>
+
 </section>
