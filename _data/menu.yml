@@ -1,0 +1,20 @@
+- title: Home
+  link: /
+
+- title: Acerca de nosotros
+  link: /about
+
+- title: Catálogo
+  link: /about
+
+- name: img
+  title: empty
+
+- title: Servicios
+  link: /about
+
+- title: Adicionales
+  link: /about
+
+- title: Contáctenos
+  link: /contact
