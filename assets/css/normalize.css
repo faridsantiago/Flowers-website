@@ -3,9 +3,10 @@
     padding: 0;
     border: none;
     font-weight: bold;
-    font-family: Poppins ;
+    font-family: 'Poppins', sans-serif;
+
 }
-h2, h1, h3{
+h2, h1, h3, h5{
     font-weight: bold !important;
 }
 
