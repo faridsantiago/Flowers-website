@@ -1,6 +1,4 @@
 
-
-
 .custom-active{
     color: var(--color-rojo) !important;
     border-bottom: 2px solid var(--color-rojo) !important;
@@ -19,7 +17,12 @@
 .padding-section{
     padding: 80px 0;
 }
-
+.wavy{
+    background-image: url("/assets/img/wave.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+}
 
 .slide img{
     height: 63vh !important;
