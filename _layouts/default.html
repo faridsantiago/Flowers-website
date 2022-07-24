@@ -5,6 +5,8 @@ lang: "en"
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 	
 <head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title> {{ page.title }}</title>
 	{% include css.html %}
 	<script src="https://kit.fontawesome.com/b6c39d1e15.js" crossorigin="anonymous"></script>
@@ -13,14 +15,10 @@ lang: "en"
 </head>
 
 
-
-	<body class="{{body_class}}">
+<body class="wy-body-for-nav" role="document">
 		{% include header.html %}
-	<!-- Google Tag Manager (noscript) -->
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KG5L82H"
-	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
-		<main role="main">
+	
+		<main role="main" >
 				{{ content }}
 				<a href="https://wa.me/573116331753?text=Hola!%20Me%20gustaría%20saber%20más%20información%20de%20sus%20productos" class="whatsapp text-decoration-none text-white" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
 		</main>
@@ -29,5 +27,5 @@ lang: "en"
 			{% include footer.html %}
 		</footer>
 	
-	</body>
+</body>
 </html>
