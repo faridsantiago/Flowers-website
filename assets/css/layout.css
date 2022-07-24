@@ -1,21 +1,19 @@
-.head{
-    display: flex;
-    height: 115px;
-    justify-content: center;
-    box-shadow: 0 1px 4px rgb(238, 141, 141);
-    z-index: 13;
-    padding-top: 5px;
 
+.custom-active{
+    color: var(--color-rojo) !important;
+    border-bottom: 2px solid var(--color-rojo) !important;
 }
 
-.head a:hover{    
-    cursor: pointer;
-    color: var(--color-rojo);
+
+.nav-link:hover{    
+    color: var(--color-rojo) !important; 
+    border-bottom: 2px solid var(--color-rojo) !important;
 }
-#is_Seclected{
-    color: var(--color-rojo);
-    font-weight: bold;
+
+.navbar{
+    border-bottom: 1.5px solid var(--color-rojo) !important;
 }
+
 
 .extension-1{
     display: flex;

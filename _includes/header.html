@@ -1,25 +1,40 @@
-<header class="head">
-    <nav class="extension-1">
-        <div>
-            <a class="button" id="is_Seclected" >Home</a>
-        </div>
-        <div>
-            <a class="button" id="is_Selected">Acerca de nosotros</a>
-        </div>
-        <div>
-            <a class="button" id="is_Selected">Catálogo</a>
-        </div>
-        <div>
-            <div class="Logo"><img src="/assets/img/LOGO DANIA DECORACIONES.svg" alt="LOGO DANIA DECORACIONES.svg" height="125"></div>
-        </div>
-        <div>
-            <a class="button" id="is_Selected">Servicios</a>
-        </div>
-        <div>
-            <a class="button" id="is_Selected">Adicionales</a>
-        </div>
-        <div>
-            <a class="button" id="is_Selected">Contáctenos</a>
-        </div>
-    </nav>
+<header>
+  <nav class="navbar navbar-expand-lg  ">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a href="/"><div class="d-lg-none"><img src="/assets/img/LOGO DANIA DECORACIONES.svg" alt="LOGO DANIA DECORACIONES.svg" height="125"></div></a>
+   
+     
+      <div class="collapse navbar-collapse  justify-content-center" id="navbarTogglerDemo03">
+        
+        <ul class="navbar-nav  align-items-center  mb-2 mb-lg-0 gap-3">
+          {% for item in site.data.menu %}
+
+            {% if item.name == "img"%}
+            <a href="/" class="d-none d-lg-block"><img src="/assets/img/LOGO DANIA DECORACIONES.svg" alt="LOGO DANIA DECORACIONES.svg" height="125"></a>
+            {% endif%}
+
+            {% if item.title != "empty" %}
+            <li class="nav-item">
+              <a class="nav-link
+              {% if item.link == page.url %}
+                  custom-active
+              {% endif %}
+              " aria-current="page" href="{{item.link}}">{{item.title}}</a>
+            </li>
+            {% endif%}
+       
+          {% endfor %}
+        
+        </ul>
+       
+      </div>
+    </div>
+  </nav>
+
 </header>
+
+
+
