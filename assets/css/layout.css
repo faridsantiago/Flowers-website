@@ -18,7 +18,20 @@
     padding: 80px 0;
 }
 
+.slide img{
+    height: 80vh;
+}
+/* .pagina{
+    height: 200px;
 
+}
+.carrousel-item img{
+    height: 25px ;
+    width: 25px ;
+}
+.imagenes{
+    width: 100%;
+}    */
 
 .whatsapp {
   position:fixed;
@@ -37,10 +50,6 @@
 .whatsapp-icon {
   margin-top:13px;
 }
-
-
-
-
 
 .contact{
 padding-top: 1rem;
