@@ -14,21 +14,11 @@
     border-bottom: 1.5px solid var(--color-rojo) !important;
 }
 
+.padding-section{
+    padding: 80px 0;
+}
 
-.extension-1{
-    display: flex;
-    align-items: center;
-    gap: 45px;
-}
-.button{
-    font-size: 1rem;
-    display: flex;
-    text-decoration: none;
-    padding: 1em;
-    justify-content: center;
-    align-items: center;
-    color: rgba(112,112,112,1);
-}
+
 
 .whatsapp {
   position:fixed;
@@ -48,69 +38,22 @@
   margin-top:13px;
 }
 
-.imagenprinci{
-    padding-top: 1px;
-}
-.principal{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-.servicios{
-    padding-top: 3rem;
-    background-color: #c9284f;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 3rem;
-}
-.titulo-servicios{
-    display: flex;
-    font-weight: bold;
-    color: var(--background-color);
-    font-size: 50px;
-    justify-content: center;
-}
 
-.imagenes-prueba{
-    display: flex;
-    justify-content: center;
-    padding-top: 1rem;
-    gap: 5rem;
-}
-.titulo-horario{
-    padding-top: 3rem;
-    display: flex;
-    font-weight: bold;
-    color: var(--grisletras);
-    font-size: 40px;
-    justify-content: center;
-}
-.horarios-hora{
-    padding-top: 3rem;
-    display: flex;
-    color: var(--grisletras);
-    font-size: 20px;
-    justify-content: center;
-    gap: 2rem;
-}
 
-.borde-horarios{
-    padding: 20px;
-    background-color: #b3fff5;
-    border-radius: 50px;
-    color: #c9284f;
-    font-weight: bold;
+
+
+.contact{
+padding-top: 1rem;
+display: flex;
 }
-.contactos{
-padding-top: 3rem;
+.separation{
+    margin-left: 1rem;
+    padding-top: 5px;
 }
-.titulo-contactos{
-    padding-top: 2rem;
+.icons-social{
+    margin-left: 1rem;
+}
+.tittle{
     background-color: black;
     color: #FFF;
-    padding-left: 5rem;
-}
-.Textoimagen{
-    align-items: center;
 }
