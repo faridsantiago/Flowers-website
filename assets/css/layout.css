@@ -14,21 +14,11 @@
     border-bottom: 1.5px solid var(--color-rojo) !important;
 }
 
+.padding-section{
+    padding: 80px 0;
+}
 
-.extension-1{
-    display: flex;
-    align-items: center;
-    gap: 45px;
-}
-.button{
-    font-size: 1rem;
-    display: flex;
-    text-decoration: none;
-    padding: 1em;
-    justify-content: center;
-    align-items: center;
-    color: rgba(112,112,112,1);
-}
+
 
 .whatsapp {
   position:fixed;
